@@ -8,3 +8,67 @@
     scroll-behavior: smooth;
     font-family: "Inter";
 }
+.main-footer-container{
+   width: 100%;
+   background-color: #140D03;
+   color: white;
+}
+.footer-container{
+max-width: 1040px;
+margin-inline: auto;
+display: flex;
+padding: 50px;
+gap: 30px;
+justify-content: space-between;
+
+img{
+    width: 200px;
+}
+}
+
+.contact-us{
+    width: 30%;
+    h3{
+        font-size: 23px;
+    }
+    p{
+        font-size: 13px;
+        margin-top: 20px;
+    }
+    span{
+        font-weight: 700;
+    }
+}
+
+.quick-links{
+    width: 30%;
+    h3{
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+    li{
+        list-style:none;
+        font-size: 13px;
+        margin-bottom: 10px;
+
+    }
+}
+.reach-us{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    div{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    button{
+        width: 40px;
+        height: 40px;
+        background-color: #575757;
+        border: none;
+        border-radius: 5px;
+        color: white;
+    }
+}
