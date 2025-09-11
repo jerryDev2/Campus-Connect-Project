@@ -37,7 +37,7 @@ function Header() {
           </Link>
         </div>
 
-        <button className="input">
+        <button className="inputSearch">
           <i class="fa-solid fa-magnifying-glass"></i>
                   <input type="search" name="search" style={{ backgroundColor: "transparent", border:"none",outline:"none",padding:"10px",color:"white" }} />
         </button>
