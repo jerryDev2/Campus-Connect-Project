@@ -1,5 +1,5 @@
 import React from 'react'
-import "../components/Css/Contact.css"
+import "../Css/Contact.css"
 import MapEmbed from '../components/MapEmbed'
 function Contact() {
   return (
@@ -36,26 +36,26 @@ function Contact() {
           <div className='form-break'>
 
          <div><label htmlFor="">Enter Your Name*</label> 
-         <input type='text' id='name' /> </div>
+         <input type='text' id='name' className='input'/> </div>
           
          <div><label htmlFor="">Email Address*</label>
-         <input type='Email' id='email'/></div>
+         <input type='Email' id='email' className='input'/></div>
 
          
           </div>
           <div className='form-break'>
             <div><label htmlFor="">Phone Number</label>
-         <input type='number' id='phonenumber' /></div>
+         <input type='number' id='phonenumber' className='input'/></div>
 
          <div><label htmlFor="">You Are A:</label>
-         <input type='text' id='' placeholder='select...'/><br/></div>
+         <input type='text' id='' placeholder='select...'className='input'/><br/></div>
           </div>
 
          <label htmlFor="">Inquiry Type:</label><br/>
-         <input type='text' id='' placeholder='select...'/><br />
+         <input type='text' id='' placeholder='select...'className='input'/><br />
 
          <label htmlFor="">Subject*</label><br/>
-         <input type='text' id='' /><br />
+         <input type='text' id='' className='input'/><br />
 
          <label htmlFor="">Message*</label><br/>
          <input type='Text' id='' className='open'/><br/>
