@@ -1,0 +1,54 @@
+
+.headerContainer{
+    
+    background-color: transparent;
+    color: black;
+    position: absolute;
+    width: 100%;
+    top: 0;
+left: 0;
+  
+   
+}
+.navContainer{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.ulContainer{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+}
+.logo{
+    width: 100px;
+}
+.registerButton{
+    background-color: #FF9500;
+    padding: 6px;
+    padding-inline: 8px;
+    font-weight:700;
+    border: none;
+    border-radius: 25px;
+}
+.input{
+    background-color: transparent;
+    border-radius: 25px;
+    border: 2px solid white;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    color: #ffffff82;
+    gap: 10px;
+    width: 20%;
+}
+.miniHeader{
+ 
+    max-width: 1100px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
