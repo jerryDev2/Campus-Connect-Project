@@ -1,0 +1,109 @@
+.filter-contain {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  button {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    padding: 5px;
+    align-items: center;
+    border: none;
+  }
+  i {
+    font-size: 10px;
+  }
+}
+
+.all-gallery-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1100px;
+  margin-inline: auto;
+  gap: 20px;
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+.gallery-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 3px 10px #d4d4d4;
+  h4 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+.gallery-img1 {
+  background-image: url(/image/technology.avif);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+
+  height: 250px;
+}
+.gallery-img2 {
+  background-image: url(/image/children-in-hall.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+
+  height: 250px;
+}
+.gallery-img3 {
+  background-image: url(/image/student-sharing.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+
+  height: 250px;
+}
+.gallery-img4 {
+  background-image: url(/image/career.avif);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+
+  height: 250px;
+}
+.gallery-img5 {
+  background-image: url(/image/anyone.avif);
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+  height: 250px;
+}
+.gallery-img6 {
+  background-image: url(/image/academic.avif);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+
+  height: 250px;
+}
+.gallery-img7 {
+  background-image: url(/image/sport.avif);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+
+  height: 250px;
+}
+.gallery-img8 {
+  background-image: url(/image/workshop.avif);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+
+  height: 250px;
+}
+
+@media screen and (max-width: 440px) {
+  .all-gallery-card {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+  }
+}

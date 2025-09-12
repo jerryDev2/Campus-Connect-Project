@@ -1,0 +1,51 @@
+
+.registration-top{
+    margin-bottom: 350px;
+}
+.registration-form{
+    background-color: white;
+    padding: 60px;
+    border-radius: 10px;
+    top: 200px;
+    left: 300px;
+    position: absolute;
+    width: 50%;
+    box-shadow: 10px 10px 20px 4px #cfcfcf;
+    input{
+        width: 100%;
+        padding: 12px;
+        background-color: transparent;
+        border-radius: 10px;
+        border: solid 1px #5E3B0B;
+        margin-bottom: 15px;
+        outline: none;
+    }
+    button{
+        width: 100%;
+        padding: 12px;
+        background-color:#5E3B0B ;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-weight: 700;
+
+    }
+    button:hover{
+        background-color: #422a08 ;
+    }
+}
+
+@media screen and ( max-width:440px) {
+    .registration-top{
+        margin-bottom: 20px;
+    }
+    .regis-first-para{
+        width: 100%;
+    }
+    .registration-form{
+        padding: 15px;
+        width: 100%;
+        position: static;
+        margin-bottom: 20px;
+    }
+}

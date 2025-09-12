@@ -1,13 +1,17 @@
 import React from 'react'
 import "../Css/Contact.css"
+import { useEffect } from 'react';
 import MapEmbed from '../components/MapEmbed'
 function Contact() {
+    useEffect(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, []);
   return (
     <main>
       <section className="cub-section">
-        <h1 className='contact-heading'>CONTACT US</h1>
+        <h1 className="contact-heading">CONTACT US</h1>
         <p className="cub-paragraph">
-          HOME<span className='colorpara'>/CONTACT US</span>
+          HOME<span className="colorpara">/CONTACT US</span>
         </p>
       </section>
       <section className="contain">
@@ -19,25 +23,32 @@ function Contact() {
       </section>
       <section className="bar">
         <div className="box">
-          <button className="mail">
-            <i class="fa-solid fa-envelope"></i>
-          </button>
+          <a href="malto:jerrydc56538@gmail.com">
+            <button className="mail">
+              <i class="fa-solid fa-envelope"></i>
+            </button>
+          </a>
           <h4>Email Us</h4>
           <p className="ash">
-            campusConnect34@gmail.com Response within 24 hours
+            campusconnect38@gmail.com Response within 24 hours
           </p>
         </div>
+
         <div className="box">
-          <button className="mail">
-            <i class="fa-solid fa-phone"></i>
-          </button>
+          <a href="tel:+2347039434273">
+            <button className="mail">
+              <i class="fa-solid fa-phone"></i>
+            </button>
+          </a>
           <h4>Call Us</h4>
-          <p className="ash">+234-8071370987 Mon-Fri 9AM-5PM</p>
+          <p className="ash">+2347039434273 Mon-Fri 9AM-5PM</p>
         </div>
         <div className="box">
-          <button className="mail">
-            <i class="fa-solid fa-location-dot"></i>
-          </button>
+          <a href="#map">
+            <button className="mail">
+              <i class="fa-solid fa-location-dot"></i>
+            </button>
+          </a>
           <h4>Visit Us</h4>
           <p className="ash">Student Activity Centre Ground Floor</p>
         </div>
@@ -87,7 +98,7 @@ function Contact() {
 
           <label htmlFor="">Message*</label>
           <br />
-          <input type="Text" id="" className="open input"  />
+          <input type="Text" id="" className="open input" />
           <br />
 
           <button className="mssg">Send Message</button>
@@ -111,11 +122,11 @@ function Contact() {
             </p>
             <h4 className="off">Emergency Support</h4>
             <p className="location">
-              24/7 Helpline: +234 (0) 8071370987 Emergency Email:
-              divinefavouroni@gmail.com
+              24/7 Helpline: +2347039434273 Emergency Email:
+              campusconnect38@gmail.com
             </p>
           </div>
-          <div>
+          <div id="map">
             <MapEmbed />
           </div>
         </div>

@@ -2,12 +2,15 @@ import React from "react";
 import CardImage1 from "../assets/images/studentsopenmouth.png";
 import CardImage2 from "../assets/images/studentperforming.png";
 import CardImage3 from "../assets/images/projectdefenceimg.png";
+import { Link } from "react-router-dom";
 function UpComingEventComponent() {
   return (
     <main className="upcomingEventsContainer">
       <div className="heading">
         <h2>Upcoming Events</h2>
-        <p>View all</p>
+        <Link to={"events"}>
+          <p>View all</p>
+        </Link>
       </div>
       <section className="upComingcardDiv">
         <div className="UpComingcard">

@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../assets/images/logo.png"
+import { Link } from "react-router-dom";
 function FooterComponent() {
   return (
     <main className="main-footer-container">
@@ -13,20 +14,44 @@ function FooterComponent() {
           </p>
           <p>
             {" "}
-            <span>Phone:</span> +2347039434273
+            <span>Phone:</span>{" "}
+            <a
+              href="tel:234703943427"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              +2347039434273
+            </a>
           </p>
           <p>
             {" "}
-            <span>Email:</span> jerrydc56538@gmail.com
+            <span>Email:</span>{" "}
+            <a
+              href="/jerrydc56538@gmail.com"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              campusconnect38@gmail.com
+            </a>
           </p>
         </div>
         <div className="quick-links">
           <h3>QUICK LINKS</h3>
-          <li>Home</li>
-          <li>About us</li>
-          <li>Events</li>
-          <li>Gallery</li>
-          <li>Emergency Contact</li>
+          <Link to={"/"}>
+            {" "}
+            <li>Home</li>
+          </Link>
+          <Link to={"about-us"}>
+            <li>About us</li>{" "}
+          </Link>
+          <Link to={"events"}>
+            <li>Events</li>
+          </Link>
+          <Link to={"gallery"}>
+            <li>Gallery</li>
+          </Link>
+          <Link to={"/contact-us"}>
+            {" "}
+            <li>Emergency Contact</li>
+          </Link>
         </div>
 
         <div className="reach-us">
