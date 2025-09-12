@@ -17,7 +17,7 @@
 }
 
 .about-right-div {
-  background: url(//image/happystudent.jpg);
+  background: url(/image/happystudent.jpg);
   background-size: cover;
   background-position: center;
   width: 50%;
@@ -63,7 +63,7 @@
     margin-top: 20px;
   }
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 470px) {
   .descrip-container {
     flex-direction: column-reverse;
   }

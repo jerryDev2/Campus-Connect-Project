@@ -45,28 +45,12 @@ function Header() {
               <li>Contact us</li>
             </Link>
           </ul>
-          <Link to={"/register"}>
-            <button className="registerButton">Register Now!</button>
-          </Link>
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <i class="fa-solid fa-bars" onClick={handleClick}></i>
         </div>
 
-        <button className="inputSearch">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input
-            type="search"
-            name="search"
-            placeholder="Search..."
-            style={{
-              backgroundColor: "transparent",
-              border: "none",
-              outline: "none",
-              padding: "10px",
-              color: "white",
-            }}
-          />
-        </button>
+        <Link to={"/register"}>
+          <button className="registerButton">Register Now!</button>
+        </Link>
+        <i class="fa-solid fa-bars" onClick={handleClick}></i>
       </div>
       <ul
         className="mobile-nav"

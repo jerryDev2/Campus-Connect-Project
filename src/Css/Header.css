@@ -117,6 +117,9 @@
     width: 100%;
     
 }
+.registerButton{
+    display: none;
+}
     .headerContainer{
         justify-content: space-between;
     }
@@ -126,24 +129,15 @@
     .inputSearch{
         display: none;
     }
-    .registerButton{
-        position: absolute;
-        right: 150px;
-        top: 10px;
-    }
+    
     .fa-bars{
         display: block;
-        font-size: 30px;
-        margin-right: 30px;
+        font-size: 20px;
+       
     }
-    .fa-magnifying-glass{
-        display: block;
-        font-size: 25px;
-        margin-left: 600px;
-    }
-}
 
-@media screen and (max-width:440px) {
+
+@media screen and (max-width:470px) {
     .headerContainer{
         width: 100%;
     }
@@ -163,4 +157,5 @@
        margin-left: 130px;
     }
     
+}
 }

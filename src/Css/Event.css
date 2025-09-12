@@ -152,7 +152,7 @@
   top: 650px;
   backdrop-filter: blur(5px);
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 470px) {
   .detail-container {
     height: 100vh;
   }

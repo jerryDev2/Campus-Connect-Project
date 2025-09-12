@@ -48,6 +48,14 @@
 h4 {
   color: #5e3b0b;
 }
+  .bar {
+    color: #5e3b0b;
+    display: flex;
+    gap: 40px;
+    padding: 10px;
+    box-shadow: black;
+    width: 100%;
+  }
 .box {
   background-color: rgb(255, 255, 255);
   text-align: center;
@@ -178,7 +186,7 @@ h4 {
   margin-bottom: 40px;
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 470px) {
   .details {
     color: #393939;
     width: 100%;
