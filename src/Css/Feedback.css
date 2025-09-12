@@ -101,7 +101,7 @@
   margin-bottom: 20px;
   margin-top: 10px;
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 470px) {
   .field {
     width: 100%;
   }

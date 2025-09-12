@@ -96,17 +96,17 @@
 }
 
 .card1 {
-  background: url(//image/basketball.png);
+  background: url(/image/basketball.png);
   background-color: #000000da;
   background-blend-mode: overlay;
 }
 .card2 {
-  background: url(//image/sharing.png);
+  background: url(/image/Sharing.png);
   background-color: #000000da;
   background-blend-mode: overlay;
 }
 .card3 {
-  background: url(//image/graduate.png);
+  background: url(/image/graduate.png);
   background-color: #000000da;
   background-blend-mode: overlay;
 }
@@ -224,7 +224,7 @@
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 470px) {
   .descriptiveContainer {
     padding: 10px;
     padding-top: 200px;
