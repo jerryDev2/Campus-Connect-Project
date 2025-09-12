@@ -1,9 +1,9 @@
 import React from 'react'
 import "../Css/Home.css"
-
+import { Link } from 'react-router-dom';
 function AboutUsComponent() {
     return (
-      <main className='mainAboutus'>
+      <main className="mainAboutus">
         <section className="aboutUsSection">
           <div className="leftContainer">
             <h2 className="aboutHeading">About Campus-Connect</h2>
@@ -13,7 +13,9 @@ function AboutUsComponent() {
               over 376 students across various disciplines including
               Engineering, Arts, Sciences, and Management.
             </p>
-            <button className="learnMore">Learn More</button>
+            <Link to={"/about-us"}>
+              <button className="learnMore">Learn More</button>
+            </Link>
           </div>
           <div className="rightContainer"></div>
         </section>

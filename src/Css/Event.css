@@ -1,0 +1,184 @@
+.fa-chevron-down {
+  font-size: 14px;
+}
+.buttonss {
+  max-width: 1100px;
+  margin-top: 30px;
+  margin-inline: auto;
+  button {
+    padding: 6px;
+    padding-inline: 15px;
+    border-radius: 30px;
+    border: none;
+    background-color: #b5b5b5;
+  }
+  button:hover {
+    background-color: #5e3b0b;
+    color: white;
+  }
+  button:active {
+    background-color: #5e3b0b;
+    color: white;
+  }
+}
+
+.all-event-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1100px;
+  margin-inline: auto;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 60px;
+}
+.main-card {
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 5px 5px 10px 2px #cfcfcf;
+
+  h4 {
+    margin-bottom: 10px;
+  }
+  li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #888888;
+  }
+  p {
+    font-size: 13px;
+    margin-top: 15px;
+    width: 89%;
+    margin-bottom: 10px;
+    color: #888888;
+  }
+}
+
+.card-img1 {
+  background: url(/public/image/children-in-hall.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+}
+.card-img2 {
+  background: url(/public/image/student-sharing.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+}
+
+.card-img3 {
+  background: url(/public/image/career-student.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+}
+.card-img4 {
+  background: url(/public/image/awareness.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+}
+
+.event-type-button {
+  padding: 6px;
+  padding-inline: 15px;
+  border-radius: 30px;
+  border: none;
+  background-color: #5e3b0b;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.view {
+  padding: 6px;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  background-color: #5e3b0b;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.registration-deadline {
+  background-color: #ffe0b5;
+  width: 100%;
+  padding: 30px;
+}
+
+.mini-registration {
+  max-width: 1100px;
+  margin-inline: auto;
+}
+.regis {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  p {
+    font-size: 13px;
+    color: #888888;
+  }
+  h4 {
+    font-size: 15px;
+    margin-bottom: 3px;
+  }
+  button {
+    padding: 8px;
+    padding-inline: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5e3b0b;
+    font-size: 12px;
+    color: white;
+  }
+}
+
+.detail-container {
+  background-color: #3b3b3ba1;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 157vh;
+  top: 650px;
+  backdrop-filter: blur(5px);
+}
+@media screen and (max-width: 440px) {
+    .detail-container{
+        height: 100vh;
+    }
+  .all-event-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .registration-deadline {
+    padding: 10px;
+  }
+  .regis {
+    button {
+      padding: 5px;
+      padding-inline: 10px;
+    }
+    h4 {
+      width: 80%;
+    }
+  }
+  .buttonss {
+    overflow-x: auto;
+    padding: 10px;
+  }
+  .the-main-event {
+    overflow: hidden;
+  }
+  .upcoming-h3{
+    padding: 10px;
+  }
+}

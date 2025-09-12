@@ -1,0 +1,95 @@
+.descrip-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    max-width: 1100px;
+    margin-inline: auto;
+    width: 100%;
+    padding: 30px;
+}
+.about-left-div{
+    width: 40%;
+    p{
+        font-size: 15px;
+        color: #5d5d5d;
+        }
+}
+
+.about-right-div{
+    background: url(/public//image/happystudent.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    border-radius: 40px;
+    height: 300px;
+}
+
+.our-event-container{
+    max-width: 1100px;
+    background-color: white;
+    width: 100%;
+    margin-inline: auto;
+    padding: 40px;
+    margin-top: 30px;
+}
+.our-event{
+    text-align: center;
+    font-size: 30px;
+}
+.our-event-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 50px;
+    width: 100%;
+}
+
+.event-card{
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 7px 4px #676767;
+    padding: 20px;
+  
+    p{
+        color: #5d5d5d;
+        font-size: 15px;
+        width: 70%;
+        margin-inline: auto;
+        margin-top: 10px;
+       
+    }
+    h3{
+margin-top: 20px;
+    }
+}
+@media screen and (max-width:440px) {
+    .descrip-container{
+        flex-direction: column-reverse;
+    }
+    .about-left-div{
+        width: 100%;
+        p{
+            
+            text-align: center;
+        }
+        margin-bottom: 20px;
+    }
+    .about-right-div{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .our-event-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .event-card{
+        padding: 10px;
+        p{
+            width: 100%;
+        }
+    }
+    .our-event-cards{
+        padding: 20px;
+    }
+}

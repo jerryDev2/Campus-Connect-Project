@@ -12,11 +12,12 @@
     width: 50%;
     color: white;
     margin-left: 100px;
-}
-h1{
+    h1{
     font-size: 50px;
     line-height: 1;
 }
+}
+
 .campusConnect{
 color: #FF9500;
     
@@ -35,6 +36,16 @@ color: #FF9500;
     border-radius: 10px;
     font-weight: 700;
     margin-right: 10px;
+    border: 2px solid transparent;
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+.registerEvents:hover{
+    background-color: transparent;
+    border: 2px solid #FF9500;
+    color: #FF9500;
+
 }
 .exploreEvent{
     padding:8px ;
@@ -44,6 +55,14 @@ color: #FF9500;
     background-color: transparent;
     border-radius: 10px;
     font-weight: 700;
+    transition: 1s;
+    cursor: ;
+}
+.exploreEvent:hover{
+    background-color: #FF9500;
+    border: transparent;
+    color: white;
+    border: 2px solid transparent;
 }
 .featuresSection{
 display: flex;
@@ -136,7 +155,13 @@ h4{
     border-radius: 10px;
     background-color: #FF9500;
     margin-top: 15px;
+
 }
+.learnMore:hover{
+    background-color: #c97500;
+    cursor: pointer;
+}
+
 .rightContainer{
     background: url(/public/image/Elementary_school.jpg);
     background-size: cover;
@@ -155,9 +180,15 @@ h4{
 }
 .heading{
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    a{
+        text-decoration: none;
+        color:#5E3B0B;
+    }
     
 }
+
 .upComingcardDiv{
     display: flex;
     width: 100%;
@@ -196,7 +227,74 @@ button{
     background-color: #5E3B0B;
     color: white;
     padding: 10px;
+    cursor: pointer;
     
+}
+button:hover{
+    background-color: #7c4f0f;
+
+}
+}
+
+@media screen and (max-width:440px) {
+    .descriptiveContainer{
+    padding: 10px;
+    padding-top: 200px;
+    width: 100%;
+    color: white;
+    margin-left:0px;
+    h1{
+    font-size: 40px;
+    line-height: 1;
+    text-align: center;
+}
+}
+.descriptive{
+    font-size: 13px;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.registerEvents{
+    margin-left: 65px;
+    padding: 8px;
+    font-size: 11px;
+    padding-inline: 13px;
+}
+.exploreEvent{
+     padding: 8px;
+    font-size: 11px;
+    padding-inline: 13px;
+}
+.featuresSection{
+    flex-direction: column;
+}
+.aboutUsSection{
+    flex-direction: column;
+    width: 100%;
+}
+.leftContainer{
+width: 100%;
+h2{
+    text-align: center;
+    font-size: 25px;
+}
+p{
+    text-align: center;
+    font-size: 13px;
+}
+button{
+margin-left: 110px;
+margin-bottom: 60px;
+}
+}
+.rightContainer{
+    width: 100%;
+}
+.upComingcardDiv{
+    flex-direction: column;
+    gap: 30px;
 }
 }
 
