@@ -1,18 +1,18 @@
-.filter-contain{
+.filter-contain {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  button {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    width: 10%;
+    padding: 5px;
     align-items: center;
-    button{
-display: flex;
-justify-content: space-between;
-width: 10%;
-padding: 5px;
-align-items: center;
-border: none;
-    }
-    i{
-     font-size: 10px;   
-    }
+    border: none;
+  }
+  i {
+    font-size: 10px;
+  }
 }
 
 .all-gallery-card {
@@ -38,7 +38,7 @@ border: none;
 }
 
 .gallery-img1 {
-  background-image: url(/public/image/technology.avif);
+  background-image: url(/image/technology.avif);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -46,7 +46,7 @@ border: none;
   height: 250px;
 }
 .gallery-img2 {
-  background-image: url(/public/image/children-in-hall.jpg);
+  background-image: url(/image/children-in-hall.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -54,7 +54,7 @@ border: none;
   height: 250px;
 }
 .gallery-img3 {
-  background-image: url(/public/image/student-sharing.jpg);
+  background-image: url(/image/student-sharing.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -62,7 +62,7 @@ border: none;
   height: 250px;
 }
 .gallery-img4 {
-  background-image: url(/public/image/career.avif);
+  background-image: url(/image/career.avif);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -70,14 +70,14 @@ border: none;
   height: 250px;
 }
 .gallery-img5 {
-  background-image: url(/public/image/anyone.avif);
+  background-image: url(/image/anyone.avif);
   background-size: cover;
   width: 100%;
-background-position: center;
+  background-position: center;
   height: 250px;
 }
 .gallery-img6 {
-  background-image: url(/public/image/academic.avif);
+  background-image: url(/image/academic.avif);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -85,7 +85,7 @@ background-position: center;
   height: 250px;
 }
 .gallery-img7 {
-  background-image: url(/public/image/sport.avif);
+  background-image: url(/image/sport.avif);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -93,7 +93,7 @@ background-position: center;
   height: 250px;
 }
 .gallery-img8 {
-  background-image: url(/public/image/workshop.avif);
+  background-image: url(/image/workshop.avif);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -101,10 +101,9 @@ background-position: center;
   height: 250px;
 }
 
-@media screen and (max-width:440px) {
-  .all-gallery-card{
-    grid-template-columns: repeat(1 , 1fr);
+@media screen and (max-width: 440px) {
+  .all-gallery-card {
+    grid-template-columns: repeat(1, 1fr);
     padding: 10px;
   }
- 
 }

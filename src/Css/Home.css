@@ -1,300 +1,287 @@
-.mainContainer{
- background:url(/public/image/HeroSection.png);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
-    
+.mainContainer {
+  background: url(/image/HeroSection.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
 }
-.descriptiveContainer{
-    padding: 10px;
-    padding-top: 200px;
-    width: 50%;
-    color: white;
-    margin-left: 100px;
-    h1{
+.descriptiveContainer {
+  padding: 10px;
+  padding-top: 200px;
+  width: 50%;
+  color: white;
+  margin-left: 100px;
+  h1 {
     font-size: 50px;
     line-height: 1;
-}
+  }
 }
 
-.campusConnect{
-color: #FF9500;
-    
+.campusConnect {
+  color: #ff9500;
 }
-.descriptive{
-    font-size: 16px;
-    width: 65%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.descriptive {
+  font-size: 16px;
+  width: 65%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.registerEvents{
-    padding:8px ;
-    padding-inline: 15px;
-    border: none;
-    background-color: #FF9500;
-    border-radius: 10px;
-    font-weight: 700;
-    margin-right: 10px;
-    border: 2px solid transparent;
-    color: white;
-    transition: 1s;
-    cursor: pointer;
+.registerEvents {
+  padding: 8px;
+  padding-inline: 15px;
+  border: none;
+  background-color: #ff9500;
+  border-radius: 10px;
+  font-weight: 700;
+  margin-right: 10px;
+  border: 2px solid transparent;
+  color: white;
+  transition: 1s;
+  cursor: pointer;
 }
-.registerEvents:hover{
-    background-color: transparent;
-    border: 2px solid #FF9500;
-    color: #FF9500;
+.registerEvents:hover {
+  background-color: transparent;
+  border: 2px solid #ff9500;
+  color: #ff9500;
+}
+.exploreEvent {
+  padding: 8px;
+  padding-inline: 15px;
+  border: 2px solid #ff9500;
+  color: #ff9500;
+  background-color: transparent;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: 1s;
+  cursor: ;
+}
+.exploreEvent:hover {
+  background-color: #ff9500;
+  border: transparent;
+  color: white;
+  border: 2px solid transparent;
+}
+.featuresSection {
+  display: flex;
+  gap: 20px;
+  max-width: 1040px;
+  margin-inline: auto;
+  padding: 50px;
+}
+.featuresCards {
+  background-color: #000000;
+  color: white;
+  background-blend-mode: overlay;
+  position: relative;
+  border-radius: 20px;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 1px 6px 6px 3px #c0c0c0;
 
-}
-.exploreEvent{
-    padding:8px ;
-    padding-inline: 15px;
-    border:  2px solid #FF9500;
-    color: #FF9500;
-    background-color: transparent;
-    border-radius: 10px;
-    font-weight: 700;
-    transition: 1s;
-    cursor: ;
-}
-.exploreEvent:hover{
-    background-color: #FF9500;
-    border: transparent;
-    color: white;
-    border: 2px solid transparent;
-}
-.featuresSection{
-display: flex;
-gap: 20px;
-max-width: 1040px;
-margin-inline: auto;
-padding: 50px;
-}
-.featuresCards{
-    background-color: #000000; 
-    color: white;
-    background-blend-mode: overlay;
-    position: relative;
-    border-radius: 20px;
-    padding: 20px;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 1px 6px 6px 3px #c0c0c0;
-
-p{
+  p {
     font-size: 12px;
     margin-top: 5px;
     margin-bottom: 20px;
-}
-h4{
+  }
+  h4 {
     margin-top: 20px;
-    color: #FF9500;
+    color: #ff9500;
+  }
 }
-}
-.arrowBtn{
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
+.arrowBtn {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }
 
-.card1{
-    background: url(/public//image/basketball.png);
-    background-color: #000000da;
-    background-blend-mode: overlay;
+.card1 {
+  background: url(//image/basketball.png);
+  background-color: #000000da;
+  background-blend-mode: overlay;
 }
-.card2{
-    background: url(/public//image/sharing.png);
-      background-color: #000000da;
-    background-blend-mode: overlay;
+.card2 {
+  background: url(//image/sharing.png);
+  background-color: #000000da;
+  background-blend-mode: overlay;
+}
+.card3 {
+  background: url(//image/graduate.png);
+  background-color: #000000da;
+  background-blend-mode: overlay;
+}
+.card4 {
+  background: url(/image/talent.png);
+  background-color: #000000da;
+  background-blend-mode: overlay;
+}
+.mainAboutus {
+  width: 100%;
+  background: url(/image/AboutUsSectionImage.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+.aboutUsSection {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1040px;
+  margin-inline: auto;
+  margin-top: 50px;
+  align-items: center;
+}
+.leftContainer {
+  color: white;
+  width: 40%;
+}
+.aboutHeading {
+  font-size: 30px;
+}
+.story {
+  font-size: 14px;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+.learnMore {
+  padding: 6px;
+  padding-inline: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff9500;
+  margin-top: 15px;
+}
+.learnMore:hover {
+  background-color: #c97500;
+  cursor: pointer;
+}
 
+.rightContainer {
+  background: url(/image/Elementary_school.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  height: 300px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: 2px solid white;
 }
-.card3{
-    background: url(/public//image/graduate.png);
-      background-color: #000000da;
-    background-blend-mode: overlay;
+.upcomingEventsContainer {
+  max-width: 1040px;
+  margin-inline: auto;
+  padding: 40px;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  a {
+    text-decoration: none;
+    color: #5e3b0b;
+  }
+}
 
+.upComingcardDiv {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  margin-top: 20px;
+  align-items: center;
 }
-.card4{
-    background: url(/public/image/talent.png);
-      background-color: #000000da;
-    background-blend-mode: overlay;
-}
-.mainAboutus{
+.UpComingcard {
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 1px 6px 6px 3px #c0c0c0;
+  padding-bottom: 20px;
+
+  img {
     width: 100%;
-    background: url(/public/image/AboutUsSectionImage.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 30px;
-}
-.aboutUsSection{
-    display: flex;
-    justify-content: space-between;
-    max-width: 1040px;
-    margin-inline: auto;
-    margin-top: 50px;
-    align-items: center;
-}
-.leftContainer{
-    color: white;
-   width: 40%;
-}
-.aboutHeading{
-    font-size: 30px;
-    
-}
-.story{
-    font-size: 14px;
-    margin-top: 10px;
-    line-height: 1.5;
-}
-.learnMore{
-    padding: 6px;
-    padding-inline: 15px;
-    border: none;
-    border-radius: 10px;
-    background-color: #FF9500;
-    margin-top: 15px;
-
-}
-.learnMore:hover{
-    background-color: #c97500;
-    cursor: pointer;
-}
-
-.rightContainer{
-    background: url(/public/image/Elementary_school.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 50%;
-    height: 300px;
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border: 2px solid white;
-}
-.upcomingEventsContainer{
-    max-width: 1040px;
-    margin-inline: auto;
-    padding: 40px;
-}
-.heading{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    a{
-        text-decoration: none;
-        color:#5E3B0B;
-    }
-    
-}
-
-.upComingcardDiv{
-    display: flex;
-    width: 100%;
-    gap: 10px;
-    margin-top: 20px;
-    align-items: center;
-    
-}
-.UpComingcard{
-    background-color: #ffffff;
-    border-radius: 20px;
-    overflow: hidden;
-text-align: center;
-box-shadow:  1px 6px 6px 3px #c0c0c0;;
-padding-bottom: 20px;
-
-
-img{
-    width: 100%;
-}
-h3{
+  }
+  h3 {
     margin-top: 23px;
     margin-bottom: 10px;
     margin: 10px;
-    color: #5E3B0B;
-}
-p{
+    color: #5e3b0b;
+  }
+  p {
     margin: 10px;
     font-size: 15px;
-}
-button{
+  }
+  button {
     width: 90%;
-    
+
     border: none;
     border-radius: 10px;
-    background-color: #5E3B0B;
+    background-color: #5e3b0b;
     color: white;
     padding: 10px;
     cursor: pointer;
-    
-}
-button:hover{
+  }
+  button:hover {
     background-color: #7c4f0f;
-
+  }
 }
-}
 
-@media screen and (max-width:440px) {
-    .descriptiveContainer{
+@media screen and (max-width: 440px) {
+  .descriptiveContainer {
     padding: 10px;
     padding-top: 200px;
     width: 100%;
     color: white;
-    margin-left:0px;
-    h1{
-    font-size: 40px;
-    line-height: 1;
-    text-align: center;
-}
-}
-.descriptive{
+    margin-left: 0px;
+    h1 {
+      font-size: 40px;
+      line-height: 1;
+      text-align: center;
+    }
+  }
+  .descriptive {
     font-size: 13px;
     width: 100%;
     margin-top: 30px;
     text-align: center;
     margin-bottom: 30px;
-}
-.registerEvents{
+  }
+  .registerEvents {
     margin-left: 65px;
     padding: 8px;
     font-size: 11px;
     padding-inline: 13px;
-}
-.exploreEvent{
-     padding: 8px;
+  }
+  .exploreEvent {
+    padding: 8px;
     font-size: 11px;
     padding-inline: 13px;
-}
-.featuresSection{
+  }
+  .featuresSection {
     flex-direction: column;
-}
-.aboutUsSection{
+  }
+  .aboutUsSection {
     flex-direction: column;
     width: 100%;
-}
-.leftContainer{
-width: 100%;
-h2{
-    text-align: center;
-    font-size: 25px;
-}
-p{
-    text-align: center;
-    font-size: 13px;
-}
-button{
-margin-left: 110px;
-margin-bottom: 60px;
-}
-}
-.rightContainer{
+  }
+  .leftContainer {
     width: 100%;
-}
-.upComingcardDiv{
+    h2 {
+      text-align: center;
+      font-size: 25px;
+    }
+    p {
+      text-align: center;
+      font-size: 13px;
+    }
+    button {
+      margin-left: 110px;
+      margin-bottom: 60px;
+    }
+  }
+  .rightContainer {
+    width: 100%;
+  }
+  .upComingcardDiv {
     flex-direction: column;
     gap: 30px;
+  }
 }
-}
-
