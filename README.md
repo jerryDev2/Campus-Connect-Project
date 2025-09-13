@@ -4,9 +4,9 @@ Campus Connect is a modern web application for college event management. It enab
 
 ## Team Members
 
--
--
--
+- Ehigiator Osaivbie Jerry
+- Oni DivineFavour Osasuwmenghian
+- Imarhiayi Godspower
 
 ## Project Overview
 
@@ -16,6 +16,12 @@ Campus Connect is a responsive web application designed as a centralized hub for
 - **Faculty:** To promote events organized by their departments or clubs.
 
 The website features a clean, well-structured UI and serves as a single point of access for all campus event-related information.
+
+## Live Project Url 
+https://campus-connect109.netlify.app/
+
+## Github Url
+https://github.com/jerrydc565/Campus-Connect-Project
 
 ## Data Handling
 
