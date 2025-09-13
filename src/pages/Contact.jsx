@@ -60,18 +60,39 @@ function Contact() {
           <div className="form-break">
             <div>
               <label htmlFor="">Enter Your Name*</label>
-              <input type="text" id="name" className="input" />{" "}
+              <input
+                type="text"
+                id="name"
+                className="input"
+                required
+                minLength={3}
+                maxLength={18}
+              />{" "}
             </div>
 
             <div>
               <label htmlFor="">Email Address*</label>
-              <input type="Email" id="email" className="input" />
+              <input
+                type="Email"
+                id="email"
+                className="input"
+                required
+                minLength={7}
+                maxLength={25}
+              />
             </div>
           </div>
           <div className="form-break">
             <div>
               <label htmlFor="">Phone Number</label>
-              <input type="number" id="phonenumber" className="input" />
+              <input
+                type="number"
+                id="phonenumber"
+                className="input"
+                required
+                min={8}
+                max={16}
+              />
             </div>
 
             <div>
@@ -79,8 +100,11 @@ function Contact() {
               <input
                 type="text"
                 id=""
-                placeholder="select..."
+                placeholder="type..."
                 className="input"
+                required
+                minLength={3}
+                maxLength={25}
               />
               <br />
             </div>
@@ -88,17 +112,38 @@ function Contact() {
 
           <label htmlFor="">Inquiry Type:</label>
           <br />
-          <input type="text" id="" placeholder="select..." className="input" />
+          <input
+            type="text"
+            id=""
+            placeholder="type..."
+            className="input"
+            required
+            minLength={3}
+            maxLength={25}
+          />
           <br />
 
           <label htmlFor="">Subject*</label>
           <br />
-          <input type="text" id="" className="input" />
+          <input
+            type="text"
+            id=""
+            className="input"
+            required
+            minLength={3}
+            maxLength={25}
+          />
           <br />
 
           <label htmlFor="">Message*</label>
           <br />
-          <input type="Text" id="" className="open input" />
+          <input
+            type="Text"
+            id=""
+            className="open input"
+            required
+            
+          />
           <br />
 
           <button className="mssg">Send Message</button>

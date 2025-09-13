@@ -16,7 +16,7 @@ function Register() {
             paddingTop: "120px",
           }}
         >
-          Create Account
+          Register For Event
         </h3>
         <p
           className=".regis-first-para"

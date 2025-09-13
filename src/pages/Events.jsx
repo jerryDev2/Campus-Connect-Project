@@ -1,12 +1,17 @@
 import React from "react";
 import "../Css/Event.css";
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+  import { eventDetails } from "../components/EventDetails";
 function Events() {
   const [current, setCurrent] = useState(null);
+
+  
     useEffect(() => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }, []);
- const mainCards = [
+
+  const mainCards = [
    {
      cardImg: <div className="card-img1"></div>,
      button1: <button className="event-type-button">Technology</button>,
@@ -38,7 +43,7 @@ function Events() {
      button2: "View Details",
    },
    {
-     cardImg: <div className="card-img1"></div>,
+     cardImg: <div className="card-img2"></div>,
      button1: <button className="event-type-button">Culture</button>,
      heading: <h4>Annual Cultural Festival</h4>,
      text1: (
@@ -147,7 +152,6 @@ function Events() {
           marginTop: "50px",
           maxWidth: "1100px",
           marginInline: "auto",
-
         }}
       >
         {" "}
@@ -160,7 +164,7 @@ function Events() {
           gap: "15px",
         }}
       >
-        <button>All</button>
+
         <button>Technology</button>
         <button>Culture</button>
         <button>Career</button>
@@ -202,7 +206,9 @@ function Events() {
               <h4 style={{ color: "black" }}>Annual Sports Championship</h4>
               <p>Registration closes: 12/10/2025</p>
             </div>{" "}
-            <button>Register Now!</button>
+            <Link to={"/register"}>
+              <button>Register Now!</button>
+            </Link>
           </div>
           <div className="regis">
             {" "}
@@ -210,7 +216,9 @@ function Events() {
               <h4 style={{ color: "black" }}>AI & Machine Learning</h4>
               <p>Registration closes: 29/11/2025</p>
             </div>
-            <button>Register Now!</button>
+            <Link to={"/register"}>
+              <button>Register Now!</button>
+            </Link>
           </div>
           <div className="regis">
             {" "}
@@ -218,17 +226,114 @@ function Events() {
               <h4 style={{ color: "black" }}>Spring Cultural Canival</h4>
               <p>Registration closes: 31/9/2025</p>
             </div>{" "}
-            <button>Register Now!</button>
+            <Link to={"/register"}>
+              <button>Register Now!</button>
+            </Link>
           </div>
         </section>
       </section>
       {current && (
         <section className="detail-container" onClick={() => setCurrent(null)}>
-          <div
-            className="detail-card"
-            onClick={(e) => e.stopPropagation()}
-          ></div>
-          <div></div>
+          <div className="detail-card" onClick={(e) => e.stopPropagation()}>
+            <section className="upper-section">
+              <img src={eventDetails[current]?.image} alt="" />{" "}
+              <div className="upper-section-button">
+                <button>{eventDetails[current]?.category}</button>{" "}
+                <button className="other-button">Registration Open</button>
+              </div>
+              <h2 className="popout-title">{eventDetails[current]?.title}</h2>
+              <p className="popout-para">{eventDetails[current]?.department}</p>
+              <li className="popout-list">
+                {" "}
+                <i
+                  class="fa-solid fa-calendar"
+                  style={{ marginRight: "10px" }}
+                ></i>
+                {eventDetails[current]?.date} . {eventDetails[current]?.time}
+              </li>
+            </section>
+            <div className="list-cont">
+              {" "}
+              <li className="list-one">Overview</li>
+            </div>
+            <section className="center-section">
+              <div
+                style={{ display: "flex", gap: "10px" }}
+                className="loca-div"
+              >
+                <div style={{ display: "flex" }} className="loc">
+                  <i class="fa-solid fa-location-dot loc-icon"></i>
+                  <div>
+                    {" "}
+                    <p>Venue</p>
+                    <p className="people">{eventDetails[current]?.venue}</p>
+                  </div>
+                </div>
+                <div style={{ display: "flex" }} className="exp">
+                  <i class="fa-solid fa-user loc-icon"></i>
+                  <div>
+                    {" "}
+                    <p>Expected</p>
+                    <p className="people">500+ participants</p>
+                  </div>
+                </div>
+                <div style={{ display: "flex" }} className="org">
+                  <i class="fa-solid fa-table-columns loc-icon"></i>
+                  <div>
+                    {" "}
+                    <p>Organizer</p>
+                    <p className="people">{eventDetails[current]?.organizer}</p>
+                  </div>
+                </div>
+              </div>
+              <h3>About this event</h3>
+              <p className="about-event-para">
+                {eventDetails[current]?.description}
+              </p>
+
+              <div className="regis-info">
+                <h3>Registration Information</h3>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    maxWidth: "500px",
+                    marginTop: "20px",
+                  }}
+                >
+                  {" "}
+                  <h5>Registration fee:</h5>
+                  <h5>Deadline:</h5>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    maxWidth: "500px",
+                    marginBottom: "20px",
+                  }}
+                >
+                  {" "}
+                  <p style={{ fontSize: "12px" }}>
+                    Free for students, N50,000 for external particpants
+                  </p>
+                  <p style={{ fontSize: "12px" }}>11/03/2025</p>
+                </div>
+              </div>
+              <div className="event-prize">
+                <h4> Prizes & Awards</h4>
+                <p>N1,000,000</p>
+              </div>
+            </section>
+
+            <section className="bottom-section">
+              {" "}
+              <Link to={"/register"}>
+                {" "}
+                <button>Register Now</button>
+              </Link>
+            </section>
+          </div>
         </section>
       )}
     </main>

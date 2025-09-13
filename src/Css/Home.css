@@ -11,9 +11,19 @@
   width: 50%;
   color: white;
   margin-left: 100px;
+
+
   h1 {
+    animation-name: homeH;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-fill-mode: forwards;
+animation-iteration-count: 1;
     font-size: 50px;
     line-height: 1;
+  }
+  a{
+    color: white;
   }
 }
 
@@ -25,12 +35,22 @@
   width: 65%;
   margin-top: 20px;
   margin-bottom: 20px;
+  animation-name: homeH;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-fill-mode: forwards;
+animation-iteration-count: 1;
 }
 .registerEvents {
   padding: 8px;
   padding-inline: 15px;
   border: none;
   background-color: #ff9500;
+  animation-name: homeH;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-fill-mode: forwards;
+animation-iteration-count: 1;
   border-radius: 10px;
   font-weight: 700;
   margin-right: 10px;
@@ -50,6 +70,11 @@
   border: 2px solid #ff9500;
   color: #ff9500;
   background-color: transparent;
+  animation-name: homeH;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-fill-mode: forwards;
+animation-iteration-count: 1;
   border-radius: 10px;
   font-weight: 700;
   transition: 1s;
@@ -133,6 +158,9 @@
 .leftContainer {
   color: white;
   width: 40%;
+  a{
+    color: black;
+  }
 }
 .aboutHeading {
   font-size: 30px;
@@ -195,6 +223,9 @@
   text-align: center;
   box-shadow: 1px 6px 6px 3px #c0c0c0;
   padding-bottom: 20px;
+  a{
+    color: white;
+  }
 
   img {
     width: 100%;
@@ -231,6 +262,7 @@
     width: 100%;
     color: white;
     margin-left: 0px;
+    
     h1 {
       font-size: 40px;
       line-height: 1;
@@ -284,4 +316,11 @@
     flex-direction: column;
     gap: 30px;
   }
+}
+
+@keyframes homeH {
+    from{
+        transform: translateX(-250px);
+    } to {transform: translateX(0px);
+    }
 }
