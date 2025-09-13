@@ -19,20 +19,27 @@ function UpComingEventComponent() {
           <p>
             Celebrate diversity through music, dance, drama, and art festivals
           </p>
-          <button>View Details</button>
+          <Link to={"/register"}>
+            <button>Register Now</button>
+          </Link>
         </div>
         <div className="UpComingcard">
-          <img src={CardImage2} alt="" />
+          <img src={CardImage3} alt=""  />
           <h3> Academic Events</h3>
           <p>
             Attend workshops, seminars, and guest lectures by industry experts
+            <pre> </pre>
           </p>
-          <button>View Details</button>
+          <Link to={"/register"}>
+            <button>Register Now</button>
+          </Link>
         </div>
         <div className="UpComingcard">
-          <img src={CardImage3} alt="" /> <h3>Sports Events</h3>
+          <img src={CardImage2} alt="" /> <h3>Sports Events</h3>
           <p>Compete in inter-college tournaments and fitness challenges</p>
-          <button>View Details</button>
+          <Link to={"/register"}>
+            <button>Register Now</button>
+          </Link>
         </div>
       </section>
     </main>

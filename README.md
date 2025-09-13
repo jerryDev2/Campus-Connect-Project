@@ -2,10 +2,11 @@
 
 Campus Connect is a modern web application for college event management. It enables students, staff, and event organizers to seamlessly create, manage, and participate in campus events. The platform provides a user-friendly interface, event registration, feedback collection, and a gallery of past events.
 
-## Team Members 
-- 
-- 
-- 
+## Team Members
+
+-
+-
+-
 
 ## Project Overview
 
@@ -69,6 +70,10 @@ The app uses [React Router](https://reactrouter.com/) for navigation:
 4. **Open your browser:**
    Visit [http://localhost:5173](http://localhost:5173) (default Vite port)
 
+5. **Design Specifications**
+   figma
+   Visit https://www.figma.com/design/TesF52XB9N4DtO5wyfOziI/Campus-Connect?node-id=14-40&t=OYGuqNu4LDFBWCHY-1
+
 ### Build for Production
 
 ```sh
@@ -81,8 +86,6 @@ The production-ready files will be in the `dist/` directory.
 
 ## Technologies Used
 
-
-
 ## Contributing
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
@@ -90,5 +93,88 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 ## License
 
 This project is licensed under the MIT License.
+
+## Application Flowcharts
+
+Below are the step-by-step flow descriptions for each main page/component. Use these as a guide to create visual diagrams in draw.io, Lucidchart, or Figma.
+
+### 1. Home Page
+
+- Start
+- Display Header (Navigation)
+- Show Welcome Message & Banner
+- Show Highlights of Upcoming Events (cards/carousel)
+- Show Quick Links to Other Pages
+- Display Footer
+- End
+
+### 2. About Us Page
+
+- Start
+- Display Header (Navigation)
+- Show College Information (name, location, affiliations)
+- Show Key Annual Events (Technical, Cultural, Sports, Academic)
+- Show Organizing Bodies/Teams
+- Display Footer
+- End
+
+### 3. Events Page
+
+- Start
+- Display Header (Navigation)
+- Fetch/Display List of Events (from JS variables)
+- Show Filtering Options (by category: Technical, Cultural, Sports, Academic)
+- Show Sorting Options (by date, name, category)
+- For each event:
+  - Show Event Card (name, date, time, venue, description)
+  - “View Details” button (optional: show modal/details)
+- Display Registration Deadlines Section
+- Display Footer
+- End
+
+### 4. Gallery Page
+
+- Start
+- Display Header (Navigation)
+- Fetch/Display Event Images (from JS variables)
+- Show Filtering Options (by year or category)
+- Show Gallery Cards/Images
+- Display Footer
+- End
+
+### 5. Register Page
+
+- Start
+- Display Header (Navigation)
+- Show Registration Form (Full Name, Email, StudentID, Password, Confirm Password)
+- “Register” Button (static, no backend)
+- Display Footer
+- End
+
+### 6. Feedback Page
+
+- Start
+- Display Header (Navigation)
+- Show Feedback Form (Name, Email, User Type, Event Attended, Rating, Comments)
+- “Send Message” Button (UI only, no backend)
+- Display Footer
+- End
+
+### 7. Contact Us Page
+
+- Start
+- Display Header (Navigation)
+- Show Contact Details (faculty, student coordinators)
+- Show Inquiry Form (Name, Email, Phone, Role, Inquiry Type, Subject, Message)
+- Show Embedded Google Map (campus location)
+- Display Footer
+- End
+
+### 8. Common Components
+
+- **Header:** Navigation links to all pages, visible on every page.
+- **Footer:** Contact info, quick links, social media, visible on every page.
+
+---
 
 _For more details, see the Software Requirement Specification (SRS) document._

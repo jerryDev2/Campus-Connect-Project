@@ -57,18 +57,50 @@ function FooterComponent() {
         <div className="reach-us">
           <img src={Logo} alt="" />
           <div className="reach-us-div">
-            <button>
-              <i class="fa-brands fa-facebook-f"></i>
-            </button>
-            <button>
-              <i class="fa-brands fa-twitter"></i>
-            </button>
-            <button>
-              <i class="fa-brands fa-instagram"></i>
-            </button>
-            <button>
-              <i class="fa-brands fa-whatsapp"></i>
-            </button>
+            <a
+              href="https://web.facebook.com/profile.php?id=61580878556636"
+              target="_blank"
+              style={{
+                color: "white",
+              }}
+            >
+              <button>
+                <i class="fa-brands fa-facebook-f"></i>
+              </button>
+            </a>
+            <a
+              href="https://x.com/campusconnect92"
+              target="_blank"
+              style={{
+                color: "white",
+              }}
+            >
+              <button>
+                <i class="fa-brands fa-twitter"></i>
+              </button>
+            </a>
+            <a
+              href="https://www.instagram.com/campusconnect385/"
+              target="_blank"
+              style={{
+                color: "white",
+              }}
+            >
+              <button>
+                <i class="fa-brands fa-instagram"></i>
+              </button>
+            </a>
+            <a
+              href="https://WA.ME/+2347039434273"
+              target="_blank"
+              style={{
+                color: "white",
+              }}
+            >
+              <button>
+                <i class="fa-brands fa-whatsapp"></i>
+              </button>
+            </a>
           </div>
         </div>
       </section>

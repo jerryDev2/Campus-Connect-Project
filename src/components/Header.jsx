@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../assets/images/logo.png";
 import "../Css/Header.css";
 import { Link } from "react-router-dom";
@@ -8,16 +8,23 @@ function Header() {
   const [mobileNav, setMobileNav] = useState("Hide")
   
   const handleClick = () => {
-    if (mobileNav === "Show") {
-      setMobileNav("Hide");
-    } else {
+    if (mobileNav === "Hide") {
       setMobileNav("Show");
+    } else {
+      setMobileNav("Hide");
     }
   };
 
+    const close = () => {
+      if (mobileNav === "Show") {
+        setMobileNav("Hide");
+      }
+    };
+  
+
 
   return (
-    <header className="headerContainer">
+    <header className="headerContainer" onClick={close}>
       <div className="miniHeader">
         <div className="navContainer">
           <img src={Logo} alt="" className="logo" />
@@ -57,6 +64,7 @@ function Header() {
         style={{
           display: mobileNav === "Hide" ? "none" : "block",
         }}
+        onClick={close}
       >
         <Link to={"/"}>
           <li>Home</li>

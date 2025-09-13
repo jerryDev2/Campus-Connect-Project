@@ -62,7 +62,7 @@
   height: 200px;
 }
 .card-img2 {
-  background: url(/image/student-sharing.jpg);
+  background: url(/public//image/student-sharing.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -102,6 +102,187 @@
   background-color: #5e3b0b;
   color: white;
   margin-bottom: 10px;
+  cursor: pointer;
+}
+.view:hover{
+  background-color: #815311;
+}
+.detail-card {
+  width: 100%;
+  max-width: 900px;
+  margin-inline: auto;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.list-cont{
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+  border-bottom: solid 1px #b5b5b5;
+}
+.list-one{
+  list-style: none;
+  text-align: center;
+  font-weight: 500;
+  color: #888888;
+}
+.loca-div{
+  padding: 20px;
+}
+.loc{
+  background-color: #e5860042;
+  border: 1px solid #ff9500;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  align-items: center;
+  color: #ff9500;
+}
+.exp{
+    background-color: #48484842;
+  border: 1px solid #2d2d2d;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  align-items: center;
+  color: #2d2d2d;
+}
+.org{
+   background-color: #a200ff42;
+  border: 1px solid #c800e2;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  align-items: center;
+  color: #c800e2;
+}
+.center-section{
+  padding-inline: 20px;
+  height: 120px;
+  overflow-y: scroll;
+}
+.loc-icon{
+  font-size: 25px;
+}
+.people{
+  font-size: 13px;
+}
+.about-event-para{
+  margin-top: 10px;
+  color: #616161;line-height: 1.8;
+  font-size: 15px;
+}
+.what{
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+.regis-info{
+  background-color: rgba(2, 196, 2, 0.13);
+  padding: 10px;
+  border: solid 1px green;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  color: green;
+}
+.bottom-section{
+  padding: 20px;
+  background-color: rgb(248, 248, 248);
+  border-top: 1px solid rgb(196, 196, 196);
+  button{
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #5e3b0b;
+    color: white;
+    font-weight: 700;
+cursor: pointer;
+  }
+  a{
+    color: white;
+  }
+  button:hover{
+    background-color: #754a0e;
+  }
+}
+.event-prize{
+  background-color: #5e3b0b2f;
+  padding: 10px;
+  border: solid 1px #5e3b0b;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: #5e3b0b;
+  h4{
+    margin-bottom: 10px;
+  }
+}
+.lap{
+  margin-bottom: 8px;
+  color: #616161;
+  list-style: none;
+}
+.upper-section {
+overflow: hidden;
+object-fit: cover;
+object-position: center;
+position: relative;
+img{
+  width: 100%;
+  
+}
+  width: 100%;
+  height: 300px;
+ 
+  color: white;
+  h2{
+    font-size: 30px;
+  }
+}
+.popout-title{
+  margin-bottom: 10px;
+  position: absolute;
+  top: 170px;
+  left: 40px;
+}
+.popout-para{
+  margin-bottom: 10px;
+   position: absolute;
+  top: 220px;
+  left: 40px;
+}
+.popout-list{
+  font-size: 13px;
+  list-style: none;
+   position: absolute;
+  top: 250px;
+  left: 40px;
+}
+.upper-section-button {
+  padding-top: 120px;
+  left: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+   position: absolute;
+  top: 10px;
+  button {
+    padding: 8px;
+    padding-inline: 13px;
+    border-radius: 15px;
+    border: none;
+    background-color: #5e3b0b;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .other-button {
+    background-color: #888888;
+    color: white;
+  }
+  
 }
 
 .registration-deadline {
@@ -138,6 +319,15 @@
     background-color: #5e3b0b;
     font-size: 12px;
     color: white;
+    cursor: pointer;
+  }
+  button:hover{
+    background-color: #815311;
+  }
+
+
+  a{
+    color: white;
   }
 }
 
@@ -148,13 +338,39 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 157vh;
-  top: 650px;
+  height: 202vh;
+  top: 400px;
   backdrop-filter: blur(5px);
 }
 @media screen and (max-width: 470px) {
+.upper-section-button{
+padding-top: 40px;
+left: 20px;
+}
+.popout-title{
+  top: 90px;
+  left: 20px;
+}
+.popout-para{
+  top: 130px;
+  left: 20px;
+}
+.popout-list{
+  top: 155px;
+  left: 20px;
+}
+
+.upper-section{
+  height: 200px;
+}
+
+  .loca-div{
+    flex-direction: column;
+  }
+
   .detail-container {
-    height: 100vh;
+    height: 420vh;
+    top: 240px;
   }
   .all-event-cards {
     grid-template-columns: repeat(1, 1fr);

@@ -20,12 +20,15 @@ function Feedback() {
           <div className="form-breaker">
             <div className="broken">
               <div>
-                <label htmlFor="">Your Name*</label>
+                <label htmlFor="text">Your Name*</label>
                 <input
                   type="text"
                   id="name"
                   className="backfrm"
                   placeholder="John Doe"
+                  required
+                  minLength={3}
+                  maxLength={18}
                 />
               </div>
 
@@ -36,6 +39,9 @@ function Feedback() {
                   id="email"
                   className="backfrm"
                   placeholder="JohnDoe@example.com"
+                  required
+                  minLength={3}
+                  maxLength={25}
                 />
                 <br />
               </div>
@@ -57,6 +63,7 @@ function Feedback() {
               id=""
               className="backspace"
               placeholder="Share what you like about the event..."
+              required
             />
             <br />
           </div>
@@ -67,6 +74,7 @@ function Feedback() {
               id=""
               className="backspace"
               placeholder="Share your suggestions for improvement..."
+              required
             />
             <br />
           </div>
@@ -74,13 +82,13 @@ function Feedback() {
             <label htmlFor="">Would You Recommend This Event To Others?*</label>
             <br />
             <div className="bttn">
-              <input type="radio" className="btttn" />
+              <input type="radio" className="btttn"  />
               <label>Yes,Definitely</label>
               <br />
             </div>
 
             <div className="bttn">
-              <input type="radio" className="btttn" />
+              <input type="radio" className="btttn"  />
               <label>Maybe</label>
               <br />
             </div>
