@@ -2,11 +2,10 @@
 
 Campus Connect is a modern web application for college event management. It enables students, staff, and event organizers to seamlessly create, manage, and participate in campus events. The platform provides a user-friendly interface, event registration, feedback collection, and a gallery of past events.
 
-## Team Members
-
--
--
--
+## Team Members 
+- 
+- 
+- 
 
 ## Project Overview
 
@@ -70,9 +69,9 @@ The app uses [React Router](https://reactrouter.com/) for navigation:
 4. **Open your browser:**
    Visit [http://localhost:5173](http://localhost:5173) (default Vite port)
 
-5. **Design Specifications**
-   figma
-   Visit https://www.figma.com/design/TesF52XB9N4DtO5wyfOziI/Campus-Connect?node-id=14-40&t=OYGuqNu4LDFBWCHY-1
+ 5. **Design Specifications**
+      figma
+      Visit https://www.figma.com/design/TesF52XB9N4DtO5wyfOziI/Campus-Connect?node-id=14-40&t=OYGuqNu4LDFBWCHY-1
 
 ### Build for Production
 
@@ -86,6 +85,8 @@ The production-ready files will be in the `dist/` directory.
 
 ## Technologies Used
 
+
+
 ## Contributing
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
@@ -93,6 +94,7 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 ## License
 
 This project is licensed under the MIT License.
+
 
 ## Application Flowcharts
 
@@ -126,8 +128,8 @@ Below are the step-by-step flow descriptions for each main page/component. Use t
 - Show Filtering Options (by category: Technical, Cultural, Sports, Academic)
 - Show Sorting Options (by date, name, category)
 - For each event:
-  - Show Event Card (name, date, time, venue, description)
-  - “View Details” button (optional: show modal/details)
+   - Show Event Card (name, date, time, venue, description)
+   - “View Details” button (optional: show modal/details)
 - Display Registration Deadlines Section
 - Display Footer
 - End

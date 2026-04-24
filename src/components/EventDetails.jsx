@@ -43,7 +43,7 @@ export const eventDetails = [
   },
   {
     id: 1,
-    title: " Development Workshop",
+    title: "-0 Development Workshop",
     description:
       "Two-day intensive program on leadership skills, team management, decision-making, conflict resolution, and organizational behavior",
     date: "2026-03-15",
