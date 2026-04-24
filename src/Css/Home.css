@@ -154,10 +154,10 @@ animation-iteration-count: 1;
   align-items: center;
 }
 .leftContainer {
-  color: white;
+  color: black;
   width: 40%;
   a{
-    color: black;
+    color: white;
   }
 }
 .aboutHeading {
@@ -191,6 +191,7 @@ animation-iteration-count: 1;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border: 2px solid white;
+  box-shadow: 3px 3px, 7px rgb(65, 65, 65);
 }
 .upcomingEventsContainer {
   max-width: 1040px;
