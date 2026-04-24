@@ -1,27 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Logo from "../assets/images/logo.png";
 import "../Css/Header.css";
 import { Link } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+
 function Header() {
+  const [mobileNav, setMobileNav] = useState("Hide");
 
-
-  const [mobileNav, setMobileNav] = useState("Hide")
-  
   const handleClick = () => {
-    if (mobileNav === "Hide") {
-      setMobileNav("Show");
-    } else {
+    setMobileNav((value) => (value === "Hide" ? "Show" : "Hide"));
+  };
+
+  const close = () => {
+    if (mobileNav === "Show") {
       setMobileNav("Hide");
     }
   };
-
-    const close = () => {
-      if (mobileNav === "Show") {
-        setMobileNav("Hide");
-      }
-    };
-  
-
 
   return (
     <header className="headerContainer" onClick={close}>
@@ -32,63 +26,66 @@ function Header() {
             <Link to={"/"}>
               <li>Home</li>
             </Link>
-
             <Link to={"/about-us"}>
               <li>About us</li>
             </Link>
             <Link to={"/events"}>
               <li> Events</li>
             </Link>
-
             <Link to={"/gallery"}>
               <li>Gallery</li>
             </Link>
-
             <Link to={"/feedback"}>
               <li>Feedback</li>
             </Link>
             <Link to={"/contact-us"}>
-              {" "}
               <li>Contact us</li>
             </Link>
           </ul>
         </div>
 
         <Link to={"/register"}>
-          <button className="registerButton">Register Now!</button>
+          <motion.button
+            whileHover={{ scale: 1.03 }}
+            className="registerButton"
+          >
+            Register Now!
+          </motion.button>
         </Link>
-        <i class="fa-solid fa-bars" onClick={handleClick}></i>
+        <i className="fa-solid fa-bars" onClick={handleClick}></i>
       </div>
-      <ul
-        className="mobile-nav"
-        style={{
-          display: mobileNav === "Hide" ? "none" : "block",
-        }}
-        onClick={close}
-      >
-        <Link to={"/"}>
-          <li>Home</li>
-        </Link>
-
-        <Link to={"/about-us"}>
-          <li>About us</li>
-        </Link>
-        <Link to={"/events"}>
-          <li> Events</li>
-        </Link>
-
-        <Link to={"/gallery"}>
-          <li>Gallery</li>
-        </Link>
-
-        <Link to={"/feedback"}>
-          <li>Feedback</li>
-        </Link>
-        <Link to={"/contact-us"}>
-          {" "}
-          <li>Contact us</li>
-        </Link>
-      </ul>
+      <AnimatePresence>
+        {mobileNav === "Show" && (
+          <motion.ul
+            className="mobile-nav"
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.25 }}
+            onClick={close}
+            style={{ overflow: "hidden" }}
+          >
+            <Link to={"/"}>
+              <li>Home</li>
+            </Link>
+            <Link to={"/about-us"}>
+              <li>About us</li>
+            </Link>
+            <Link to={"/events"}>
+              <li> Events</li>
+            </Link>
+            <Link to={"/gallery"}>
+              <li>Gallery</li>
+            </Link>
+            <Link to={"/feedback"}>
+              <li>Feedback</li>
+            </Link>
+            <Link to={"/contact-us"}>
+              <li>Contact us</li>
+            </Link>
+          </motion.ul>
+        )}
+      </AnimatePresence>
     </header>
   );
 }
